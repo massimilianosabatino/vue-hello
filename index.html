@@ -10,12 +10,20 @@
 <body>
     <!-- Mount container -->
     <div id="app">
+        <!-- Text interpolation with "Mustache" syntax -->
         <h1>{{ h1Content }}</h1>
+        <div class="img-container">
+            <!-- Binding attribute with directive (shorthand syntax for v-bind:src="") -->
+            <img :src="imageSrc" alt="">
+        </div>
     </div>
+    <!-- /Mount container -->
+    
     <!-- Vue JS -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- /Vue JS -->
     <!-- JS link -->
     <script src="main.js"></script>
+    <!-- /JS link -->
 </body>
 </html>
