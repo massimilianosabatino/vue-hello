@@ -14,8 +14,11 @@
         <h1>{{ h1Content }}</h1>
         <div class="img-container">
             <!-- Binding attribute with directive (shorthand syntax for v-bind:src="") -->
-            <img :src="imageSrc" alt="">
+            <img :src="imageSrc" alt="Random image">
         </div>
+        <!-- Bind event on click (shorthand syntax for v-on:click="") -->
+        <span>Cambia l'immagine e le dimensioni casualmente</span>
+        <button @click="changeSize">Cambia!</button>
     </div>
     <!-- /Mount container -->
     
