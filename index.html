@@ -17,8 +17,16 @@
             <img :src="imageSrc" alt="Random image">
         </div>
         <!-- Bind event on click (shorthand syntax for v-on:click="") -->
-        <span>Cambia l'immagine e le dimensioni casualmente</span>
+        <span>Cambia l'immagine e le dimensioni casualmente </span>
         <button @click="changeSize">Cambia!</button>
+        <div>
+            <span>Cambia le dimensioni dell'immagine per generare una nuova immagine con le dimensioni specificate  </span>
+            <label for="width-select"></label>
+            <input type="number" id="width-select" v-model.number="widthSet">
+            <label for="height-select"></label>
+            <input type="number" id="height-select" v-model="heightSet">
+            <button @click="setSize">Cambia!</button>
+        </div>
     </div>
     <!-- /Mount container -->
     
